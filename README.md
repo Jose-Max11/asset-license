@@ -485,3 +485,22 @@ Repository visibility: Private.
 ## 16. Author
 
 Developed as an individual full-stack proof-of-concept project for the FORTISURE evaluation.
+
+## 17. Database Structure
+
+Database Name: asset_license_management
+
+The application uses MySQL as its relational database.
+
+## 18. Database Tables
+
+| Table Name | Purpose |
+|---|---|
+| users | Stores admin and employee details |
+| assets | Stores hardware asset information |
+| asset_assignments | Tracks asset allocation and return history |
+| licenses | Stores software license details |
+| license_assignments | Tracks license seat allocation |
+| requests | Stores employee requests |
+| asset_reports | Stores lost and damaged asset reports |
+| audit_logs | Stores activity tracking information |
