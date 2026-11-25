@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* Page */
+.auth-page {
+  min-height: 100vh;
+  background: #f5ddd9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 25px;
+}
+
+.auth-image img {
+  width: 100%;
+  max-width: 480px;
+}
+
+/* Card */
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+  padding: 35px;
+  background: #a5646a;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(80, 40, 45, 0.3);
+  color: white;
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form */
+label {
+  display: block;
+  margin: 12px 0 5px;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 8px;
+  background: #fdeeec;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: 3px solid #5e3a4d;
+}
+
+.forgot {
+  display: block;
+  margin: 8px 0 20px;
+  text-align: right;
+  font-size: 13px;
+  color: white;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  height: 44px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.main-btn {
+  margin-top: 20px;
+  border: none;
+  background: #fdeeec;
+  color: #5e3a4d;
+}
+
+.main-btn:hover {
+  background: #5e3a4d;
+  color: white;
+}
+
+/* Transparent Google button */
+.google-btn {
+  margin-top: 12px;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.google-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.or {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* Bottom link */
+.switch {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.switch a,
+.forgot {
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 800px) {
+  .auth-page {
+    flex-direction: column;
+  }
+
+  .auth-image img {
+    max-width: 280px;
+  }
+}

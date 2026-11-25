@@ -1,0 +1,356 @@
+
+/* FONT AND COMMON STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF5F7;
+    font-family: "Papyrus", fantasy;
+    color: #C2185B;
+}
+
+
+/* MAIN AUTHENTICATION PAGE */
+
+.auth-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    gap: 70px;
+    background: #ffffff;
+    text-align: center;
+}
+
+
+/* LOGIN AND SIGNUP CARD */
+
+.form-section {
+    width: 430px;
+    max-width: 100%;
+}
+
+.auth-card {
+    background: #FFFFFF;
+    padding: 38px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.auth-card:hover {
+    box-shadow: 0 0 25px #C2185B,
+                0 0 40px rgba(240, 98, 146, 0.4);
+}
+
+
+/* BRAND NAME */
+
+.brand-name {
+    color: #C2185B;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* HEADINGS */
+
+.auth-card h2 {
+    color: #C2185B;
+    text-align: center;
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #D81B60;
+    margin-bottom: 25px;
+    font-size: 15px;
+}
+
+
+/* FORM */
+
+.auth-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-card label {
+    color: #C2185B;
+    font-weight: bold;
+    margin-bottom: 7px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.auth-card input,
+.auth-card select {
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 17px;
+    border: 1px solid #E9B5C2;
+    outline: none;
+    border-radius: 9px;
+    background: #FFF5F7;
+    color: #C2185B;
+    font-family: "Papyrus", fantasy;
+    font-size: 14px;
+}
+
+.auth-card input:focus,
+.auth-card select:focus {
+    border-color: #C2185B;
+    box-shadow: 0 0 10px rgba(194, 24, 91, 0.2);
+}
+
+.auth-card input::placeholder {
+    color: #C98A9E;
+}
+
+.auth-card select {
+    cursor: pointer;
+}
+
+.auth-card select option {
+    background: #FFFFFF;
+    color: #C2185B;
+}
+
+
+/* BUTTON */
+
+.auth-card button {
+    padding: 13px;
+    border: none;
+    border-radius: 9px;
+    background: #C95F7B;
+    color: white;
+    font-family: "Papyrus", fantasy;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.auth-card button:hover {
+    background: #C2185B;
+    box-shadow: 0 0 25px #C2185B,
+                0 0 40px #F06292;
+    transform: scale(1.03);
+}
+
+.auth-card button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* LOGIN / SIGNUP SWITCH */
+
+.switch-text {
+    text-align: center;
+    color: #C2185B;
+    font-size: 14px;
+    margin-top: 22px;
+}
+
+.switch-text span {
+    color: #D81B60;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.switch-text span:hover {
+    color: #C95F7B;
+}
+
+
+/* ERROR MESSAGE */
+
+.error-message {
+    color: white;
+    background: #C2185B;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+
+/* SUCCESS MESSAGE */
+
+.success-message {
+    color: white;
+    background: #C95F7B;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+
+/* PASSWORD HINT */
+
+.password-hint {
+    color: #D81B60;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 15px;
+}
+
+
+/* OR DIVIDER */
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 20px 0;
+    color: #888;
+}
+
+.or-divider::before,
+.or-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+
+
+/* GOOGLE LOGIN */
+
+.google-login {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+
+/* DASHBOARD */
+
+.dashboard-page {
+    min-height: 100vh;
+    background: #FFF5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.dashboard-card {
+    background: #FFFFFF;
+    color: #C2185B;
+    text-align: center;
+    padding: 45px;
+    border-radius: 20px;
+    width: 450px;
+    max-width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.dashboard-card:hover {
+    box-shadow: 0 0 25px #C2185B,
+                0 0 40px #F06292;
+}
+
+.dashboard-card h1 {
+    margin-bottom: 15px;
+}
+
+.dashboard-card p {
+    margin: 10px 0;
+}
+
+.dashboard-card button {
+    padding: 12px 35px;
+    margin-top: 20px;
+    background: #C95F7B;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Papyrus", fantasy;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dashboard-card button:hover {
+    background: #C2185B;
+    box-shadow: 0 0 25px #C2185B;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 850px) {
+
+    .auth-page {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .illustration-section {
+        width: 40%;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .auth-page {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .illustration-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .security-illustration {
+        height: 150px;
+    }
+
+    .security-circle {
+        width: 120px;
+        height: 120px;
+    }
+
+    .shield {
+        width: 75px;
+        height: 90px;
+        font-size: 40px;
+    }
+
+    .illustration-section h1 {
+        font-size: 22px;
+    }
+
+    .illustration-section p {
+        font-size: 13px;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+
+    .auth-card {
+        padding: 25px;
+    }
+}
